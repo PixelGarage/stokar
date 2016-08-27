@@ -1,0 +1,49 @@
+/*
+ *  Node page component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@pxl-margin-tb: 50px;
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-page {
+  margin: @pxl-margin-tb 0;
+
+  .row {
+    div.col-sm-5 {
+      .field-name-field-image {
+        margin-right: -@grid-gutter-width/2;
+        .field-item {
+          img {
+            max-width: 100%;
+            height: auto;
+
+          }
+        }
+      }
+
+    }
+
+    div.col-sm-7 {
+      .field-name-body {
+        margin-left: 9%;
+        #pxl-mixins.wysiwyg-body;
+      }
+
+    }
+  }
+
+  .page-node-18 & {  // autor page
+    div.col-sm-7 {
+      padding-top: 10%;
+    }
+  }
+}
+

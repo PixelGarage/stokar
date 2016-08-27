@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'URWGroteskExtLigObl';
+    src: url('fonts/URWGroteskExtLigObl.eot');
+    src: url('fonts/URWGroteskExtLigObl.eot') format('embedded-opentype'),
+         url('fonts/URWGroteskExtLigObl.woff2') format('woff2'),
+         url('fonts/URWGroteskExtLigObl.woff') format('woff'),
+         url('fonts/URWGroteskExtLigObl.ttf') format('truetype'),
+         url('fonts/URWGroteskExtLigObl.svg#URWGroteskExtLigObl') format('svg');
+}

@@ -1,0 +1,91 @@
+/*
+ *  CKEditor styles
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+@pxl-text-font: 'URWGroteskExtLig', sans-serif;
+@pxl-text-font-light: 'URWGroteskExtLig', sans-serif;
+@pxl-text-font-medium: 'URWGroteskExtLig', sans-serif;
+@pxl-text-font-bold: 'URWGroteskExtLig', sans-serif;
+@pxl-text-font-italic: 'URWGroteskExtLigObl', sans-serif;
+@pxl-text-font-light-italic: 'URWGroteskExtLigObl', sans-serif;
+@pxl-text-font-bold-italic: 'URWGroteskExtLigObl', sans-serif;
+
+@text-color: #222;
+
+@tablet:  ~"screen and (min-width: 48em)";
+
+// Mixins
+// -------------------------
+.font-size-responsive(@max-size; @min-size) {
+  @min-font-size: max(@min-size, @max-size*5/8); // min = 480 / 768 * max
+  @min-max-breakpoint: unit((48 * @min-font-size / @max-size), em);
+  @font-break:  ~"screen and (min-width: @{min-max-breakpoint})";
+
+  // min font size
+  font-size: @min-font-size !important;
+
+  // dynamic font size
+  @media @font-break {
+    font-size: unit(@max-size/7.68, vw) !important;
+  }
+
+  // max.font size
+  @media @tablet {
+    font-size: @max-size !important;
+  }
+}
+
+
+// Main settings
+// -------------------------
+.pxl-normal {
+  font-family: @pxl-text-font;
+  line-height: 1.1;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(17px, 14px);
+}
+
+.pxl-normal-large {
+  font-family: @pxl-text-font;
+  line-height: 1.1;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(22px, 18px);
+}
+
+.pxl-italic {
+  font-family: @pxl-text-font-italic;
+  line-height: 1.1;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(17px, 14px);
+}
+
+.pxl-italic-large {
+  font-family: @pxl-text-font-italic;
+  line-height: 1.1;
+  text-align: left;
+  color: @text-color;
+  .font-size-responsive(22px, 18px);
+}
+
+.pxl-blockquote {
+  font-family: @pxl-text-font;
+  line-height: 1;
+  text-align: left;
+  color: @text-color;
+  letter-spacing: 0.06em;
+  .font-size-responsive(22px, 18px);
+
+  &:before {
+    content: '«';
+    display: inline;
+  }
+  &:after {
+    content: '»';
+    display: inline;
+  }
+}

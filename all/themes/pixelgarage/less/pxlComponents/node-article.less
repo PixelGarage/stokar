@@ -1,0 +1,82 @@
+/*
+ *  Node article component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-article {
+  margin: 0;
+
+  .row {
+    div.col-sm-5 {
+      padding: 0 @grid-gutter-width/2 20px;
+
+      .field-name-field-image {
+        width: 100%;
+
+        .field-item {
+          text-align: left;
+
+          img {
+            display: inline-block;
+            margin: 0;
+            width: 50%;
+            height: auto;
+
+          }
+        }
+      }
+
+      &.large-image {
+        .field-name-field-image {
+          .field-item {
+            img {
+              width: 83.333333%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
+    div.col-sm-7 {
+      padding-bottom: 20px;
+
+      .field-name-body {
+        margin-left: 0;
+        #pxl-mixins.wysiwyg-body;
+      }
+
+    }
+
+    @media @tablet {
+      div.col-sm-5 {
+        padding: 6px 0 20px;
+
+        .field-name-field-image {
+          .field-item {
+            text-align: right;
+          }
+        }
+      }
+
+      div.col-sm-7 {
+        .field-name-body {
+          margin-left: 9%;
+        }
+
+      }
+    }
+
+  }
+}
+

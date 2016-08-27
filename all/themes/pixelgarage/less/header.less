@@ -1,0 +1,128 @@
+/*
+ *  Header section (navigation)
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// Main settings
+// -------------------------
+body.navbar-is-fixed-top {
+  padding-top: 76px !important;
+
+  &.admin-menu {
+    padding-top: 76px !important;
+  }
+
+}
+
+
+header#navbar {
+  border-bottom: none;
+  background: transparent none;
+
+  .container, .container-fluid {
+    padding: 25px @grid-gutter-width/2;
+
+    .navbar-header {
+      // header (branding)
+      a.logo {
+        display: none;
+
+        img {
+          display: none;
+          max-height: 50px;
+          width: auto;
+        }
+      }
+
+      a.navbar-brand {
+        display: none;
+        padding: 0;
+        font-family: @pxl-text-font-medium;
+        font-size: @font-size-h1;
+        color: @gray-darker;
+        line-height: 1;
+      }
+
+      .navbar-toggle {
+        // navbar toggle with burger
+        margin: 0 @grid-gutter-width/2 0 0;
+        padding: 0;
+        border: none;
+        font-size: 22px;
+
+        &:hover {
+          color: @link-hover-color;
+          background: none;
+        }
+      }
+    }
+
+    // collapse part
+    .navbar-collapse {
+      text-align: center;
+
+      // main menu
+      nav {
+        margin: 0;
+        line-height:1;
+
+        ul.navbar-nav {
+          display: inline-block;
+          float: none;
+          margin: 0;
+          width: 100%;
+
+          li {
+            a {
+              padding: 0;
+              font-family: @pxl-text-font;
+              font-size: 22px;
+              line-height: 2;
+              color: @link-color;
+
+              &:hover,
+              &.active {
+                color: @link-hover-color;
+                background: none;
+              }
+            }
+
+            &:last-child {
+              a {
+                padding-right: 0;
+              }
+            }
+          }
+        }
+      }
+
+      @media @tablet {
+        text-align: right;
+
+        nav {
+          ul.navbar-nav {
+            width: auto;
+
+            li {
+              a {
+                padding: 3px 10px;
+                font-size: @font-size-base;
+                line-height: 1;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+

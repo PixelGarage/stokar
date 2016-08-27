@@ -1,0 +1,35 @@
+/*
+ *  Node zitat component
+ * --------------------------------------------------*/
+
+// Variables
+// -------------------------
+
+
+// Mixins
+// -------------------------
+
+
+
+// General settings
+// -------------------------
+.node.node-zitat {
+  margin: @pxl-margin-tb 0;
+
+  .row {
+    div.col-sm-12 {
+      .field-name-body {
+        #pxl-mixins.wysiwyg-body;
+      }
+
+      .field-name-field-autor {
+        .field-item {
+          font-family: @pxl-text-font-italic;
+          #pxl-mixins.font-size-responsive(22px, 18px);
+        }
+      }
+
+    }
+  }
+}
+

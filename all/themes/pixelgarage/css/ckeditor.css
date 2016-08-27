@@ -1,0 +1,97 @@
+/*
+ *  CKEditor styles
+ * --------------------------------------------------*/
+.pxl-normal {
+  font-family: 'URWGroteskExtLig', sans-serif;
+  line-height: 1.1;
+  text-align: left;
+  color: #222;
+  font-size: 14px !important;
+}
+@media screen and (min-width: 39.529411764705884em) {
+  .pxl-normal {
+    font-size: 2.21354167vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal {
+    font-size: 17px !important;
+  }
+}
+.pxl-normal-large {
+  font-family: 'URWGroteskExtLig', sans-serif;
+  line-height: 1.1;
+  text-align: left;
+  color: #222;
+  font-size: 18px !important;
+}
+@media screen and (min-width: 39.27272727272727em) {
+  .pxl-normal-large {
+    font-size: 2.86458333vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal-large {
+    font-size: 22px !important;
+  }
+}
+.pxl-italic {
+  font-family: 'URWGroteskExtLigObl', sans-serif;
+  line-height: 1.1;
+  text-align: left;
+  color: #222;
+  font-size: 14px !important;
+}
+@media screen and (min-width: 39.529411764705884em) {
+  .pxl-italic {
+    font-size: 2.21354167vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-italic {
+    font-size: 17px !important;
+  }
+}
+.pxl-italic-large {
+  font-family: 'URWGroteskExtLigObl', sans-serif;
+  line-height: 1.1;
+  text-align: left;
+  color: #222;
+  font-size: 18px !important;
+}
+@media screen and (min-width: 39.27272727272727em) {
+  .pxl-italic-large {
+    font-size: 2.86458333vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-italic-large {
+    font-size: 22px !important;
+  }
+}
+.pxl-blockquote {
+  font-family: 'URWGroteskExtLig', sans-serif;
+  line-height: 1;
+  text-align: left;
+  color: #222;
+  letter-spacing: 0.06em;
+  font-size: 18px !important;
+}
+@media screen and (min-width: 39.27272727272727em) {
+  .pxl-blockquote {
+    font-size: 2.86458333vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-blockquote {
+    font-size: 22px !important;
+  }
+}
+.pxl-blockquote:before {
+  content: '«';
+  display: inline;
+}
+.pxl-blockquote:after {
+  content: '»';
+  display: inline;
+}
