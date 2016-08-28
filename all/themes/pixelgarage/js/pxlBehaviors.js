@@ -27,10 +27,10 @@
 
   /**
    * Allows full size clickable items.
+   */
    Drupal.behaviors.fullSizeClickableItems = {
     attach: function () {
-      var $clickableItems = $('.node-link-item.node-teaser .field-group-div')
-        .add('.node-team-member.node-teaser .field-group-div');
+      var $clickableItems = $('#views-bootstrap-carousel-1 .item');
 
       $clickableItems.once('click', function () {
         $(this).on('click', function () {
@@ -40,35 +40,52 @@
       });
     }
   };
-   */
+
 
   /**
-   * Swaps images from black/white to colored on mouse hover.
-   Drupal.behaviors.hoverImageSwap = {
-    attach: function () {
-      $('.node-project.node-teaser .field-name-field-images a img').hover(
-        function () {
-          // mouse enter
-          src = $(this).attr('src');
-          $(this).attr('src', src.replace('teaser_bw', 'teaser_normal'));
-        },
-        function () {
-          // mouse leave
-          src = $(this).attr('src');
-          $(this).attr('src', src.replace('teaser_normal', 'teaser_bw'));
-        }
-      );
-    }
-  }
+   * Allows to add different intervals for each slide in a carousel.
+   * The implementation uses a timer inside the slid-event to start and pause the carousel
+   * according to the slide interval.
    */
+  Drupal.behaviors.intervalOfSlides = {
+    attach: function() {
+      var $carousel = $('#views-bootstrap-carousel-1'),
+          $leftControl = $carousel.find('.carousel-control.left'),
+          $rightControl = $carousel.find('.carousel-control.right'),
+          startInterval = parseInt($carousel.find('.item.active').attr('data-interval'));
 
-  /**
-   * Open file links in its own tab. The file field doesn't implement this behaviour right away.
-   Drupal.behaviors.openDocumentsInTab = {
-    attach: function () {
-      $(".field-name-field-documents").find(".field-item a").attr('target', '_blank');
+      //
+      // start carousel with small interval (1000ms), which will be the default slide interval
+      var timeout = setTimeout(function() {
+        $carousel.carousel({interval: 1000});
+      }, startInterval-1000);
+
+      //
+      // Add event handling of carousel
+      // find interval time of displayed slide and set it
+      $carousel.off('slid.bs.carousel');
+      $carousel.on('slid.bs.carousel', function () {
+        clearTimeout(timeout);
+        var duration = parseInt($(this).find('.item.active').attr('data-interval'));
+
+        // pause carousel until duration minus default interval has passed,
+        // then start carousel again with default interval
+        $carousel.carousel('pause');
+        timeout = setTimeout(function() { $carousel.carousel(); }, duration-1000);
+      });
+
+      //
+      // clear timeout if user clicks left/right control
+      $leftControl.off('click');
+      $leftControl.on('click', function(){
+        clearTimeout(timeout);
+      });
+
+      $rightControl.off('click');
+      $rightControl.on('click', function(){
+        clearTimeout(timeout);
+      });
     }
   }
-   */
 
 })(jQuery);

@@ -9098,19 +9098,35 @@ form#user-login {
 .view .view-content .views-row {
   margin-bottom: 70px;
 }
-.view.view-zitate .view-content {
+.view.view-zitate .view-content .carousel {
   position: relative;
   margin: 0;
   padding: 0 0 0 9%;
   height: auto;
 }
-.view.view-zitate .view-content > .carousel-inner .item {
-  cursor: pointer;
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
 }
-.view.view-zitate .view-content > .carousel-inner .item:hover {
-  color: #0000ff;
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-inner .item.active {
+  opacity: 1;
 }
-.view.view-zitate .view-content > .carousel-indicators {
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-inner .item.active.left,
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-inner .item.active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-inner .item.next.left,
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-inner .item.prev.right {
+  opacity: 1;
+}
+.view.view-zitate .view-content .carousel.carousel-fade .carousel-control {
+  z-index: 2;
+}
+.view.view-zitate .view-content .carousel > .carousel-indicators {
   position: fixed;
   top: 20px;
   bottom: auto;
@@ -9119,17 +9135,17 @@ form#user-login {
   overflow-x: auto;
   white-space: nowrap;
 }
-.view.view-zitate .view-content > .carousel-indicators li {
+.view.view-zitate .view-content .carousel > .carousel-indicators li {
   margin: 0 5px;
   width: 14px;
   height: 14px;
   border-color: #aaa;
 }
-.view.view-zitate .view-content > .carousel-indicators li.active {
+.view.view-zitate .view-content .carousel > .carousel-indicators li.active {
   width: 17px;
   height: 17px;
 }
-.view.view-zitate .view-content > a.carousel-control {
+.view.view-zitate .view-content .carousel > a.carousel-control {
   display: block;
   position: absolute;
   top: 110px;
@@ -9146,11 +9162,11 @@ form#user-login {
   background: #fff;
 }
 @media screen and (min-width: 30em) {
-  .view.view-zitate .view-content > a.carousel-control {
+  .view.view-zitate .view-content .carousel > a.carousel-control {
     top: 160px;
   }
 }
-.view.view-zitate .view-content > a.carousel-control.left {
+.view.view-zitate .view-content .carousel > a.carousel-control.left {
   left: -10px;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -9159,14 +9175,14 @@ form#user-login {
   box-shadow: 2px 0 2px rgba(100, 100, 100, 0.4);
 }
 @media screen and (min-width: 30em) {
-  .view.view-zitate .view-content > a.carousel-control.left {
+  .view.view-zitate .view-content .carousel > a.carousel-control.left {
     left: -30px;
   }
 }
-.view.view-zitate .view-content > a.carousel-control.left .fa {
+.view.view-zitate .view-content .carousel > a.carousel-control.left .fa {
   margin-left: -10px;
 }
-.view.view-zitate .view-content > a.carousel-control.right {
+.view.view-zitate .view-content .carousel > a.carousel-control.right {
   right: -10px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
@@ -9175,11 +9191,11 @@ form#user-login {
   box-shadow: -2px 0 2px rgba(100, 100, 100, 0.4);
 }
 @media screen and (min-width: 30em) {
-  .view.view-zitate .view-content > a.carousel-control.right {
+  .view.view-zitate .view-content .carousel > a.carousel-control.right {
     right: -30px;
   }
 }
-.view.view-zitate .view-content > a.carousel-control.right .fa {
+.view.view-zitate .view-content .carousel > a.carousel-control.right .fa {
   margin-right: -10px;
 }
 /*
@@ -9742,7 +9758,8 @@ form#user-login {
  *  Node zitat component
  * --------------------------------------------------*/
 .node.node-zitat {
-  margin: 50px 0;
+  margin: 0;
+  cursor: pointer;
 }
 .node.node-zitat .row div.col-sm-12 .field-name-body h1,
 .node.node-zitat .row div.col-sm-12 .field-name-body h2,
@@ -9908,6 +9925,9 @@ form#user-login {
   .node.node-zitat .row div.col-sm-12 .field-name-field-autor .field-item {
     font-size: 22px;
   }
+}
+.node.node-zitat:hover {
+  color: #0000ff;
 }
 /*
  *  Node / block webform component
@@ -11084,6 +11104,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li:last-child 
  * --------------------------------------------------*/
 .container,
 .container-fluid {
+  color: #222;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

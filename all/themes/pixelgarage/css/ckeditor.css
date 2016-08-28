@@ -5,7 +5,6 @@
   font-family: 'URWGroteskExtLig', sans-serif;
   line-height: 1.1;
   text-align: left;
-  color: #222;
   font-size: 14px !important;
 }
 @media screen and (min-width: 39.529411764705884em) {
@@ -22,7 +21,6 @@
   font-family: 'URWGroteskExtLig', sans-serif;
   line-height: 1.1;
   text-align: left;
-  color: #222;
   font-size: 18px !important;
 }
 @media screen and (min-width: 39.27272727272727em) {
@@ -39,7 +37,6 @@
   font-family: 'URWGroteskExtLigObl', sans-serif;
   line-height: 1.1;
   text-align: left;
-  color: #222;
   font-size: 14px !important;
 }
 @media screen and (min-width: 39.529411764705884em) {
@@ -56,7 +53,6 @@
   font-family: 'URWGroteskExtLigObl', sans-serif;
   line-height: 1.1;
   text-align: left;
-  color: #222;
   font-size: 18px !important;
 }
 @media screen and (min-width: 39.27272727272727em) {
@@ -73,7 +69,6 @@
   font-family: 'URWGroteskExtLig', sans-serif;
   line-height: 1;
   text-align: left;
-  color: #222;
   letter-spacing: 0.06em;
   font-size: 18px !important;
 }
