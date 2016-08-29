@@ -33,6 +33,19 @@
     font-size: 22px !important;
   }
 }
+.pxl-normal-large a {
+  font-size: 18px !important;
+}
+@media screen and (min-width: 39.27272727272727em) {
+  .pxl-normal-large a {
+    font-size: 2.86458333vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal-large a {
+    font-size: 22px !important;
+  }
+}
 .pxl-italic {
   font-family: 'URWGroteskExtLigObl', sans-serif;
   line-height: 1.1;
@@ -65,6 +78,19 @@
     font-size: 22px !important;
   }
 }
+.pxl-italic-large a {
+  font-size: 18px !important;
+}
+@media screen and (min-width: 39.27272727272727em) {
+  .pxl-italic-large a {
+    font-size: 2.86458333vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-italic-large a {
+    font-size: 22px !important;
+  }
+}
 .pxl-blockquote {
   font-family: 'URWGroteskExtLig', sans-serif;
   line-height: 1;
@@ -79,6 +105,19 @@
 }
 @media screen and (min-width: 48em) {
   .pxl-blockquote {
+    font-size: 22px !important;
+  }
+}
+.pxl-blockquote a {
+  font-size: 18px !important;
+}
+@media screen and (min-width: 39.27272727272727em) {
+  .pxl-blockquote a {
+    font-size: 2.86458333vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-blockquote a {
     font-size: 22px !important;
   }
 }
