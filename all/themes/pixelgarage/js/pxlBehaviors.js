@@ -30,7 +30,7 @@
    */
    Drupal.behaviors.fullSizeClickableItems = {
     attach: function () {
-      var $clickableItems = $('#views-bootstrap-carousel-1 .item');
+      var $clickableItems = $('.view-zitate .views-row');
 
       $clickableItems.once('click', function () {
         $(this).on('click', function () {
@@ -46,7 +46,6 @@
    * Allows to add different intervals for each slide in a carousel.
    * The implementation uses a timer inside the slid-event to start and pause the carousel
    * according to the slide interval.
-   */
   Drupal.behaviors.intervalOfSlides = {
     attach: function() {
       var $carousel = $('#views-bootstrap-carousel-1'),
@@ -87,5 +86,7 @@
       });
     }
   }
+   */
+
 
 })(jQuery);

@@ -27,6 +27,10 @@ header#navbar {
   border-bottom: none;
   background: transparent none;
 
+  .front & {
+    display: none;
+  }
+
   .container, .container-fluid {
     padding: 25px @grid-gutter-width/2;
 
@@ -86,7 +90,7 @@ header#navbar {
               font-family: @pxl-text-font;
               font-size: 22px;
               line-height: 2;
-              color: @link-color;
+              color: @text-color;
 
               &:hover,
               &.active {

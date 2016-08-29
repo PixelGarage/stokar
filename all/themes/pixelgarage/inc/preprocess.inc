@@ -14,6 +14,7 @@ function pixelgarage_preprocess_html(&$vars) {
   drupal_add_library('system', 'ui');
   drupal_add_library('system', 'effects');
 
+  $vars['html_attributes_array']['lang'] = 'de';
 }
 
 /**

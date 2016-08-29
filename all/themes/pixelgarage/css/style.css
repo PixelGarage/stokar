@@ -1076,7 +1076,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #222;
+  color: #0000ff;
   text-decoration: none;
 }
 a:hover,
@@ -3273,7 +3273,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #fff;
 }
 .btn-link {
-  color: #222;
+  color: #0000ff;
   font-weight: normal;
   border-radius: 0;
 }
@@ -3871,7 +3871,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #222;
+  border-color: #0000ff;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4593,7 +4593,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #222;
+  color: #0000ff;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -4808,7 +4808,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #222;
+  color: #0000ff;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -4879,7 +4879,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #222;
+  border-color: #0000ff;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -9078,7 +9078,7 @@ form#user-login {
 #block-locale-language ul.language-switcher-locale-url > li a.language-link {
   text-transform: uppercase;
   text-decoration: none;
-  color: #222;
+  color: #0000ff;
   outline: none;
 }
 #block-locale-language ul.language-switcher-locale-url > li a.language-link.active,
@@ -9289,7 +9289,7 @@ form#user-login {
 .node.node-page .row div.col-sm-7 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
-  color: #222;
+  color: #0000ff;
 }
 @media screen and (min-width: 39.529411764705884em) {
   .node.node-page .row div.col-sm-7 .field-name-body a {
@@ -9389,7 +9389,8 @@ form#user-login {
   width: 50%;
   height: auto;
 }
-.node.node-article .row div.col-sm-5.large-image .field-name-field-image .field-item img {
+.node.node-article .row div.col-sm-5.large-image .field-name-field-image .field-item img,
+.node.node-article .row div.col-sm-5.popup-image .field-name-field-image .field-item img {
   width: 83.333333%;
   height: auto;
 }
@@ -9474,7 +9475,7 @@ form#user-login {
 .node.node-article .row div.col-sm-7 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
-  color: #222;
+  color: #0000ff;
 }
 @media screen and (min-width: 39.529411764705884em) {
   .node.node-article .row div.col-sm-7 .field-name-body a {
@@ -9667,7 +9668,7 @@ form#user-login {
 .node.node-buch .row div.col-sm-7 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
-  color: #222;
+  color: #0000ff;
 }
 @media screen and (min-width: 39.529411764705884em) {
   .node.node-buch .row div.col-sm-7 .field-name-body a {
@@ -9760,6 +9761,7 @@ form#user-login {
 .node.node-zitat {
   margin: 0;
   cursor: pointer;
+  color: #0000ff;
 }
 .node.node-zitat .row div.col-sm-12 .field-name-body h1,
 .node.node-zitat .row div.col-sm-12 .field-name-body h2,
@@ -9836,7 +9838,7 @@ form#user-login {
 .node.node-zitat .row div.col-sm-12 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
-  color: #222;
+  color: #0000ff;
 }
 @media screen and (min-width: 39.529411764705884em) {
   .node.node-zitat .row div.col-sm-12 .field-name-body a {
@@ -10077,7 +10079,7 @@ form#user-login {
 .node.node-webform .row .col-sm-6 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
-  color: #222;
+  color: #0000ff;
 }
 @media screen and (min-width: 39.529411764705884em) {
   .node.node-webform .row .col-sm-12 .field-name-body a,
@@ -11013,6 +11015,9 @@ header#navbar {
   border-bottom: none;
   background: transparent none;
 }
+.front header#navbar {
+  display: none;
+}
 header#navbar .container,
 header#navbar .container-fluid {
   padding: 25px 15px;
@@ -11117,7 +11122,7 @@ header#navbar .container-fluid .navbar-collapse nav ul.navbar-nav li:last-child 
 }
 .container a,
 .container-fluid a {
-  color: #222;
+  color: #0000ff;
   text-decoration: none;
   outline: none;
 }
