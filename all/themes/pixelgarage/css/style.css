@@ -9266,6 +9266,7 @@ form#user-login {
 .node.node-page .row div.col-sm-7 .field-name-body tbody td {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
+  line-height: 1.2;
   -ms-word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -9452,6 +9453,7 @@ form#user-login {
 .node.node-article .row div.col-sm-7 .field-name-body tbody td {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
+  line-height: 1.2;
   -ms-word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -9645,6 +9647,7 @@ form#user-login {
 .node.node-buch .row div.col-sm-7 .field-name-body tbody td {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
+  line-height: 1.2;
   -ms-word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -9815,6 +9818,7 @@ form#user-login {
 .node.node-zitat .row div.col-sm-12 .field-name-body tbody td {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
+  line-height: 1.2;
   -ms-word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
@@ -10051,6 +10055,7 @@ form#user-login {
 .node.node-webform .row .col-sm-6 .field-name-body tbody td {
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 14px;
+  line-height: 1.2;
   -ms-word-break: break-all;
   word-break: break-word;
   -webkit-hyphens: auto;
