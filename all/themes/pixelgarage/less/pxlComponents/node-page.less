@@ -4,27 +4,102 @@
 
 // Variables
 // -------------------------
-@pxl-margin-tb: 50px;
+
 
 // Mixins
 // -------------------------
+
+.illu_carousel() {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+
+  .carousel-inner {
+    .item {
+      img {
+        width: 100%;
+        height: 181.82%;
+
+      }
+      &.active {
+        &.left, &.right {
+          // during slide animation
+        }
+
+      }
+    }
+  }
+
+  // fading between slides
+  &.carousel-fade {
+    .carousel-inner {
+      .item {
+        opacity: 0;
+        #pxl-mixins.transition(opacity 0s);
+
+        &.active {
+          opacity: 1;
+
+          &.left, &.right {
+            // during slide animation
+            left: 0;
+            opacity: 0;
+            z-index: 1;
+          }
+        }
+
+        &.next.left, &.prev.right {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  > .carousel-indicators {
+    display: none;
+  }
+
+  > a.carousel-control {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    text-shadow: none;
+    border: none;
+    background: none;
+
+    > span {
+      display: none;
+    }
+
+    &.left {
+      left: 0;
+
+    }
+
+    &.right {
+      right: 0;
+    }
+  }
+}
 
 
 
 // General settings
 // -------------------------
 .node.node-page {
-  margin: @pxl-margin-tb 0;
+  .node-grid-gutter();
 
   .row {
     div.col-sm-5 {
-      .field-name-field-image {
-        margin-right: -@grid-gutter-width/2;
-        .field-item {
-          img {
-            max-width: 100%;
-            height: auto;
+      .field-name-field-images {
+        width: 100%;
 
+        .field-item {
+          .carousel {
+            .illu_carousel();
           }
         }
       }
@@ -32,17 +107,31 @@
     }
 
     div.col-sm-7 {
+      padding-bottom: 20px;
+
       .field-name-body {
-        margin-left: 9%;
         #pxl-mixins.wysiwyg-body;
       }
 
     }
-  }
 
-  .page-node-18 & {  // autor page
-    div.col-sm-7 {
-      padding-top: 10%;
+    @media @tablet {
+      div.col-sm-5 {
+        width: 42.5%;
+        margin-right: -10px;
+
+        .field-name-field-image {
+          .field-item {
+            text-align: right;
+          }
+        }
+      }
+
+      div.col-sm-7 {
+        .field-name-body {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }

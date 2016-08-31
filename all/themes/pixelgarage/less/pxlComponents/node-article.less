@@ -9,17 +9,44 @@
 // Mixins
 // -------------------------
 
+.node-grid-gutter() {
+  margin: 0;
 
+  .row {
+    @media @tablet {
+      margin: 0 -27px;
+    }
+    @media @normal {
+      margin: 0 -36px;
+    }
+    @media @wide {
+      margin: 0 -45px;
+    }
+
+    .col-sm-5, .col-sm-7 {
+      padding-bottom: 50px;
+
+      @media @tablet {
+        padding: 0 27px;
+      }
+      @media @normal {
+        padding: 0 36px;
+      }
+      @media @wide {
+        padding: 0 45px;
+      }
+
+    }
+  }
+}
 
 // General settings
 // -------------------------
 .node.node-article {
-  margin: 0;
+  .node-grid-gutter();
 
   .row {
     div.col-sm-5 {
-      padding: 0 @grid-gutter-width/2 20px;
-
       .field-name-field-image {
         width: 100%;
 
@@ -29,7 +56,7 @@
           img {
             display: inline-block;
             margin: 0;
-            width: 50%;
+            width: 61.9%;
             height: auto;
 
           }
@@ -40,7 +67,7 @@
         .field-name-field-image {
           .field-item {
             img {
-              width: 83.333333%;
+              width: 100%;
               height: auto;
             }
           }
@@ -55,12 +82,12 @@
         margin-left: 0;
         #pxl-mixins.wysiwyg-body;
       }
-
     }
 
     @media @tablet {
       div.col-sm-5 {
-        padding: 6px 0 20px;
+        width: 42.5%;
+        margin-right: -10px;
 
         .field-name-field-image {
           .field-item {
@@ -71,10 +98,10 @@
 
       div.col-sm-7 {
         .field-name-body {
-          margin-left: 9%;
+          margin-left: 10px;
         }
-
       }
+
     }
 
   }

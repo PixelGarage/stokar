@@ -27,7 +27,21 @@
       .field-name-field-autor {
         .field-item {
           font-family: @pxl-text-font-italic;
-          #pxl-mixins.font-size-responsive(22px, 18px);
+          #pxl-mixins.font-size-responsive(33px, 26px);
+
+          @media @tablet {
+            font-size: 26px !important;
+            a {
+              font-size: 26px !important;
+            }
+          }
+
+          @media @normal {
+            font-size: 33px !important;
+            a {
+              font-size: 33px !important;
+            }
+          }
         }
       }
 

@@ -3,122 +3,210 @@
  * --------------------------------------------------*/
 .pxl-normal {
   font-family: 'URWGroteskExtLig', sans-serif;
-  line-height: 1.1;
+  line-height: 1.13 !important;
   text-align: left;
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
-@media screen and (min-width: 39.529411764705884em) {
+@media screen and (min-width: 40.421052631578945em) {
   .pxl-normal {
-    font-size: 2.21354167vw !important;
+    font-size: 2.47395833vw !important;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-normal {
-    font-size: 17px !important;
+    font-size: 16px !important;
+  }
+  .pxl-normal a {
+    font-size: 16px !important;
   }
 }
-.pxl-normal-large {
-  font-family: 'URWGroteskExtLig', sans-serif;
-  line-height: 1.1;
-  text-align: left;
-  font-size: 18px !important;
-}
-@media screen and (min-width: 39.27272727272727em) {
-  .pxl-normal-large {
-    font-size: 2.86458333vw !important;
+@media screen and (min-width: 64em) {
+  .pxl-normal {
+    font-size: 19px !important;
   }
-}
-@media screen and (min-width: 48em) {
-  .pxl-normal-large {
-    font-size: 22px !important;
-  }
-}
-.pxl-normal-large a {
-  font-size: 18px !important;
-}
-@media screen and (min-width: 39.27272727272727em) {
-  .pxl-normal-large a {
-    font-size: 2.86458333vw !important;
-  }
-}
-@media screen and (min-width: 48em) {
-  .pxl-normal-large a {
-    font-size: 22px !important;
+  .pxl-normal a {
+    font-size: 19px !important;
   }
 }
 .pxl-italic {
   font-family: 'URWGroteskExtLigObl', sans-serif;
-  line-height: 1.1;
+  line-height: 1.13 !important;
   text-align: left;
-  font-size: 14px !important;
+  font-size: 16px !important;
 }
-@media screen and (min-width: 39.529411764705884em) {
+@media screen and (min-width: 40.421052631578945em) {
   .pxl-italic {
-    font-size: 2.21354167vw !important;
+    font-size: 2.47395833vw !important;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-italic {
-    font-size: 17px !important;
+    font-size: 16px !important;
+  }
+  .pxl-italic a {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-italic {
+    font-size: 19px !important;
+  }
+  .pxl-italic a {
+    font-size: 19px !important;
+  }
+}
+.pxl-normal-large {
+  font-family: 'URWGroteskExtLig', sans-serif;
+  line-height: 1 !important;
+  text-align: left;
+  font-size: 26px !important;
+}
+@media screen and (min-width: 37.81818181818182em) {
+  .pxl-normal-large {
+    font-size: 4.296875vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal-large {
+    font-size: 26px !important;
+  }
+  .pxl-normal-large a {
+    font-size: 26px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-normal-large {
+    font-size: 33px !important;
+  }
+  .pxl-normal-large a {
+    font-size: 33px !important;
+  }
+}
+.pxl-normal-large a {
+  font-size: 26px !important;
+}
+@media screen and (min-width: 37.81818181818182em) {
+  .pxl-normal-large a {
+    font-size: 4.296875vw !important;
+  }
+}
+@media screen and (min-width: 48em) {
+  .pxl-normal-large a {
+    font-size: 26px !important;
+  }
+  .pxl-normal-large a a {
+    font-size: 26px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-normal-large a {
+    font-size: 33px !important;
+  }
+  .pxl-normal-large a a {
+    font-size: 33px !important;
   }
 }
 .pxl-italic-large {
   font-family: 'URWGroteskExtLigObl', sans-serif;
-  line-height: 1.1;
+  line-height: 1 !important;
   text-align: left;
-  font-size: 18px !important;
+  font-size: 26px !important;
 }
-@media screen and (min-width: 39.27272727272727em) {
+@media screen and (min-width: 37.81818181818182em) {
   .pxl-italic-large {
-    font-size: 2.86458333vw !important;
+    font-size: 4.296875vw !important;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-italic-large {
-    font-size: 22px !important;
+    font-size: 26px !important;
+  }
+  .pxl-italic-large a {
+    font-size: 26px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-italic-large {
+    font-size: 33px !important;
+  }
+  .pxl-italic-large a {
+    font-size: 33px !important;
   }
 }
 .pxl-italic-large a {
-  font-size: 18px !important;
+  font-size: 26px !important;
 }
-@media screen and (min-width: 39.27272727272727em) {
+@media screen and (min-width: 37.81818181818182em) {
   .pxl-italic-large a {
-    font-size: 2.86458333vw !important;
+    font-size: 4.296875vw !important;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-italic-large a {
-    font-size: 22px !important;
+    font-size: 26px !important;
+  }
+  .pxl-italic-large a a {
+    font-size: 26px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-italic-large a {
+    font-size: 33px !important;
+  }
+  .pxl-italic-large a a {
+    font-size: 33px !important;
   }
 }
 .pxl-blockquote {
   font-family: 'URWGroteskExtLig', sans-serif;
-  line-height: 1;
+  line-height: 1 !important;
   text-align: left;
   letter-spacing: 0.06em;
-  font-size: 18px !important;
+  font-size: 26px !important;
 }
-@media screen and (min-width: 39.27272727272727em) {
+@media screen and (min-width: 37.81818181818182em) {
   .pxl-blockquote {
-    font-size: 2.86458333vw !important;
+    font-size: 4.296875vw !important;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-blockquote {
-    font-size: 22px !important;
+    font-size: 26px !important;
+  }
+  .pxl-blockquote a {
+    font-size: 26px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-blockquote {
+    font-size: 33px !important;
+  }
+  .pxl-blockquote a {
+    font-size: 33px !important;
   }
 }
 .pxl-blockquote a {
-  font-size: 18px !important;
+  font-size: 26px !important;
 }
-@media screen and (min-width: 39.27272727272727em) {
+@media screen and (min-width: 37.81818181818182em) {
   .pxl-blockquote a {
-    font-size: 2.86458333vw !important;
+    font-size: 4.296875vw !important;
   }
 }
 @media screen and (min-width: 48em) {
   .pxl-blockquote a {
-    font-size: 22px !important;
+    font-size: 26px !important;
+  }
+  .pxl-blockquote a a {
+    font-size: 26px !important;
+  }
+}
+@media screen and (min-width: 64em) {
+  .pxl-blockquote a {
+    font-size: 33px !important;
+  }
+  .pxl-blockquote a a {
+    font-size: 33px !important;
   }
 }
 .pxl-blockquote:before {

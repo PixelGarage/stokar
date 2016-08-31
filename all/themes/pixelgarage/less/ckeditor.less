@@ -13,6 +13,7 @@
 @pxl-text-font-bold-italic: 'URWGroteskExtLigObl', sans-serif;
 
 @tablet:  ~"screen and (min-width: 48em)";
+@normal:  ~"screen and (min-width: 64em)";
 
 // Mixins
 // -------------------------
@@ -31,7 +32,17 @@
 
   // max.font size
   @media @tablet {
+    font-size: @min-size !important;
+    a {
+      font-size: @min-size !important;
+    }
+  }
+
+  @media @normal {
     font-size: @max-size !important;
+    a {
+      font-size: @max-size !important;
+    }
   }
 }
 
@@ -40,49 +51,49 @@
 // -------------------------
 .pxl-normal {
   font-family: @pxl-text-font;
-  line-height: 1.1;
+  line-height: 1.13 !important;
   text-align: left;
-  .font-size-responsive(17px, 14px);
-}
-
-.pxl-normal-large {
-  font-family: @pxl-text-font;
-  line-height: 1.1;
-  text-align: left;
-  .font-size-responsive(22px, 18px);
-
-  a {
-    .font-size-responsive(22px, 18px);
-  }
+  .font-size-responsive(19px, 16px);
 }
 
 .pxl-italic {
   font-family: @pxl-text-font-italic;
-  line-height: 1.1;
+  line-height: 1.13 !important;
   text-align: left;
-  .font-size-responsive(17px, 14px);
+  .font-size-responsive(19px, 16px);
+}
+
+.pxl-normal-large {
+  font-family: @pxl-text-font;
+  line-height: 1 !important;
+  text-align: left;
+  .font-size-responsive(33px, 26px);
+
+  a {
+    .font-size-responsive(33px, 26px);
+  }
 }
 
 .pxl-italic-large {
   font-family: @pxl-text-font-italic;
-  line-height: 1.1;
+  line-height: 1 !important;
   text-align: left;
-  .font-size-responsive(22px, 18px);
+  .font-size-responsive(33px, 26px);
 
   a {
-    .font-size-responsive(22px, 18px);
+    .font-size-responsive(33px, 26px);
   }
 }
 
 .pxl-blockquote {
   font-family: @pxl-text-font;
-  line-height: 1;
+  line-height: 1 !important;
   text-align: left;
   letter-spacing: 0.06em;
-  .font-size-responsive(22px, 18px);
+  .font-size-responsive(33px, 26px);
 
   a {
-    .font-size-responsive(22px, 18px);
+    .font-size-responsive(33px, 26px);
   }
 
   &:before {

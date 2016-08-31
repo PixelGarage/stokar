@@ -14,25 +14,46 @@
 // Main settings
 // -------------------------
 body.navbar-is-fixed-top {
-  padding-top: 76px !important;
+  padding-top: 203px !important;
 
   &.admin-menu {
-    padding-top: 76px !important;
+    padding-top: 203px !important;
   }
 
 }
 
 
 header#navbar {
+  margin: 0;
   border-bottom: none;
   background: transparent none;
+
+  @media @tablet {
+    margin: 0 10px;
+  }
+  @media @normal {
+    margin: 0 30px;
+  }
+  @media @wide {
+    margin: 0 40px;
+  }
 
   .front & {
     display: none;
   }
 
   .container, .container-fluid {
-    padding: 25px @grid-gutter-width/2;
+    margin: 0;
+
+    @media @tablet {
+      padding: 40px 27px;
+    }
+    @media @normal {
+      padding: 40px 36px;
+    }
+    @media @wide {
+      padding: 40px 45px;
+    }
 
     .navbar-header {
       // header (branding)
@@ -60,7 +81,7 @@ header#navbar {
         margin: 0 @grid-gutter-width/2 0 0;
         padding: 0;
         border: none;
-        font-size: 22px;
+        font-size: 30px;
 
         &:hover {
           color: @link-hover-color;
