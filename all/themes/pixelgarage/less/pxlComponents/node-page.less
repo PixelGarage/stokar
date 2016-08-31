@@ -94,8 +94,26 @@
 
   .row {
     div.col-sm-5 {
+      position: relative;
+
       .field-name-field-images {
+        position: static;
         width: 100%;
+
+        @media @tablet {
+          position: absolute;
+          top: -100px;
+          left: 27px;
+          z-index: 0;
+        }
+        @media @normal {
+          top: -153px;
+          left: 36px;
+          z-index: @zindex-navbar-fixed + 10;
+        }
+        @media @wide {
+          left: 45px;
+        }
 
         .field-item {
           .carousel {
@@ -112,9 +130,21 @@
       .field-name-body {
         #pxl-mixins.wysiwyg-body;
       }
-
     }
 
+    .page-node-18 & {
+      // only autor page
+      div.col-sm-7 {
+        margin-top: -100px;
+
+        @media @tablet {
+          margin-top: 0;
+        }
+      }
+    }
+
+    //
+    // shift image and text to the right for 5-7 columns
     @media @tablet {
       div.col-sm-5 {
         width: 42.5%;

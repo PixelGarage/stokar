@@ -9241,8 +9241,32 @@ form#user-login {
     padding: 0 45px;
   }
 }
+.node.node-page .row div.col-sm-5 {
+  position: relative;
+}
 .node.node-page .row div.col-sm-5 .field-name-field-images {
+  position: static;
   width: 100%;
+}
+@media screen and (min-width: 48em) {
+  .node.node-page .row div.col-sm-5 .field-name-field-images {
+    position: absolute;
+    top: -100px;
+    left: 27px;
+    z-index: 0;
+  }
+}
+@media screen and (min-width: 64em) {
+  .node.node-page .row div.col-sm-5 .field-name-field-images {
+    top: -153px;
+    left: 36px;
+    z-index: 1040;
+  }
+}
+@media screen and (min-width: 80em) {
+  .node.node-page .row div.col-sm-5 .field-name-field-images {
+    left: 45px;
+  }
 }
 .node.node-page .row div.col-sm-5 .field-name-field-images .field-item .carousel {
   position: relative;
@@ -9451,6 +9475,14 @@ form#user-login {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.page-node-18 .node.node-page .row div.col-sm-7 {
+  margin-top: -100px;
+}
+@media screen and (min-width: 48em) {
+  .page-node-18 .node.node-page .row div.col-sm-7 {
+    margin-top: 0;
+  }
 }
 @media screen and (min-width: 48em) {
   .node.node-page .row div.col-sm-5 {
@@ -11204,6 +11236,12 @@ body.navbar-is-fixed-top {
 }
 body.navbar-is-fixed-top.admin-menu {
   padding-top: 203px !important;
+}
+body.navbar-is-fixed-top.front {
+  padding-top: 45px !important;
+}
+body.navbar-is-fixed-top.front.admin-menu {
+  padding-top: 45px !important;
 }
 header#navbar {
   margin: 0;
