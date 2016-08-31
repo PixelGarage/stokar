@@ -14,7 +14,13 @@
 // General settings
 // -------------------------
 .view {
-  margin-top: 0;
+  margin-top: 20px;
+
+  @media @tablet {
+    &:not(.view-zitate) {
+      margin-top: 95px;
+    }
+  }
 
   .view-content {
     .views-row {

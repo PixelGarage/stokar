@@ -14,10 +14,18 @@
 // Main settings
 // -------------------------
 body.navbar-is-fixed-top {
-  padding-top: 203px !important;
+  padding-top: 62px !important;
 
   &.admin-menu {
-    padding-top: 203px !important;
+    padding-top: 62px !important;
+  }
+
+  @media @tablet {
+    padding-top: 108px !important;
+
+    &.admin-menu {
+      padding-top: 108px !important;
+    }
   }
 
   &.front {
@@ -88,7 +96,7 @@ header#navbar {
       .navbar-toggle {
         // navbar toggle with burger
         margin: 0 @grid-gutter-width/2 0 0;
-        padding: 0;
+        padding: 10px 0;
         border: none;
         font-size: 30px;
 

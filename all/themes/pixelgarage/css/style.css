@@ -9093,7 +9093,12 @@ form#user-login {
  *  Views general component
  * --------------------------------------------------*/
 .view {
-  margin-top: 0;
+  margin-top: 20px;
+}
+@media screen and (min-width: 48em) {
+  .view:not(.view-zitate) {
+    margin-top: 95px;
+  }
 }
 .view .view-content .views-row {
   margin-bottom: 70px;
@@ -9203,6 +9208,7 @@ form#user-login {
  * --------------------------------------------------*/
 .node.node-page {
   margin: 0;
+  margin-top: 20px;
 }
 @media screen and (min-width: 48em) {
   .node.node-page .row {
@@ -9239,6 +9245,11 @@ form#user-login {
   .node.node-page .row .col-sm-5,
   .node.node-page .row .col-sm-7 {
     padding: 0 45px;
+  }
+}
+@media screen and (min-width: 48em) {
+  .node.node-page {
+    margin-top: 95px;
   }
 }
 .node.node-page .row div.col-sm-5 {
@@ -11232,10 +11243,18 @@ form.webform-client-form div.form-actions a.done-link:hover {
  *  Header section (navigation)
  * --------------------------------------------------*/
 body.navbar-is-fixed-top {
-  padding-top: 203px !important;
+  padding-top: 62px !important;
 }
 body.navbar-is-fixed-top.admin-menu {
-  padding-top: 203px !important;
+  padding-top: 62px !important;
+}
+@media screen and (min-width: 48em) {
+  body.navbar-is-fixed-top {
+    padding-top: 108px !important;
+  }
+  body.navbar-is-fixed-top.admin-menu {
+    padding-top: 108px !important;
+  }
 }
 body.navbar-is-fixed-top.front {
   padding-top: 45px !important;
@@ -11310,7 +11329,7 @@ header#navbar .container-fluid .navbar-header a.navbar-brand {
 header#navbar .container .navbar-header .navbar-toggle,
 header#navbar .container-fluid .navbar-header .navbar-toggle {
   margin: 0 20px 0 0;
-  padding: 0;
+  padding: 10px 0;
   border: none;
   font-size: 30px;
 }
