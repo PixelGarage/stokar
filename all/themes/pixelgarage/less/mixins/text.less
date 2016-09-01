@@ -86,12 +86,16 @@
     }
 
     p, tbody td {
-      margin-bottom: 1.13em;
+      margin-bottom: 1.1em;
       font-family: @pxl-text-font;
       .font-size-responsive(@text-size, @resp-font-size-min);
-      line-height: 1.13;
+      line-height: 1.1;
       letter-spacing: 0.02em;
       .hyphenate;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     a {

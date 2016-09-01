@@ -9101,7 +9101,10 @@ form#user-login {
   }
 }
 .view .view-content .views-row {
-  margin-bottom: 70px;
+  margin-bottom: 108px;
+}
+.view.view-zitate {
+  margin-top: 0;
 }
 .view.view-zitate .view-content .carousel {
   position: relative;
@@ -9330,9 +9333,6 @@ form#user-login {
 .node.node-page .row div.col-sm-5 .field-name-field-images .field-item .carousel > a.carousel-control.right {
   right: 0;
 }
-.node.node-page .row div.col-sm-7 {
-  padding-bottom: 20px;
-}
 .node.node-page .row div.col-sm-7 .field-name-body h1,
 .node.node-page .row div.col-sm-7 .field-name-body h2,
 .node.node-page .row div.col-sm-7 .field-name-body h3,
@@ -9383,10 +9383,10 @@ form#user-login {
 }
 .node.node-page .row div.col-sm-7 .field-name-body p,
 .node.node-page .row div.col-sm-7 .field-name-body tbody td {
-  margin-bottom: 1.13em;
+  margin-bottom: 1.1em;
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -9407,6 +9407,10 @@ form#user-login {
   .node.node-page .row div.col-sm-7 .field-name-body tbody td {
     font-size: 19px;
   }
+}
+.node.node-page .row div.col-sm-7 .field-name-body p:last-child,
+.node.node-page .row div.col-sm-7 .field-name-body tbody td:last-child {
+  margin-bottom: 0;
 }
 .node.node-page .row div.col-sm-7 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
@@ -9567,9 +9571,6 @@ form#user-login {
   width: 100%;
   height: auto;
 }
-.node.node-article .row div.col-sm-7 {
-  padding-bottom: 20px;
-}
 .node.node-article .row div.col-sm-7 .field-name-body {
   margin-left: 0;
 }
@@ -9623,10 +9624,10 @@ form#user-login {
 }
 .node.node-article .row div.col-sm-7 .field-name-body p,
 .node.node-article .row div.col-sm-7 .field-name-body tbody td {
-  margin-bottom: 1.13em;
+  margin-bottom: 1.1em;
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -9647,6 +9648,10 @@ form#user-login {
   .node.node-article .row div.col-sm-7 .field-name-body tbody td {
     font-size: 19px;
   }
+}
+.node.node-article .row div.col-sm-7 .field-name-body p:last-child,
+.node.node-article .row div.col-sm-7 .field-name-body tbody td:last-child {
+  margin-bottom: 0;
 }
 .node.node-article .row div.col-sm-7 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
@@ -9798,9 +9803,6 @@ form#user-login {
   width: 100%;
   height: auto;
 }
-.node.node-buch .row div.col-sm-7 {
-  padding-bottom: 20px;
-}
 .node.node-buch .row div.col-sm-7 .field-name-body {
   margin-left: 0;
 }
@@ -9854,10 +9856,10 @@ form#user-login {
 }
 .node.node-buch .row div.col-sm-7 .field-name-body p,
 .node.node-buch .row div.col-sm-7 .field-name-body tbody td {
-  margin-bottom: 1.13em;
+  margin-bottom: 1.1em;
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -9878,6 +9880,10 @@ form#user-login {
   .node.node-buch .row div.col-sm-7 .field-name-body tbody td {
     font-size: 19px;
   }
+}
+.node.node-buch .row div.col-sm-7 .field-name-body p:last-child,
+.node.node-buch .row div.col-sm-7 .field-name-body tbody td:last-child {
+  margin-bottom: 0;
 }
 .node.node-buch .row div.col-sm-7 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
@@ -10028,10 +10034,10 @@ form#user-login {
 }
 .node.node-zitat .row div.col-sm-12 .field-name-body p,
 .node.node-zitat .row div.col-sm-12 .field-name-body tbody td {
-  margin-bottom: 1.13em;
+  margin-bottom: 1.1em;
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -10052,6 +10058,10 @@ form#user-login {
   .node.node-zitat .row div.col-sm-12 .field-name-body tbody td {
     font-size: 19px;
   }
+}
+.node.node-zitat .row div.col-sm-12 .field-name-body p:last-child,
+.node.node-zitat .row div.col-sm-12 .field-name-body tbody td:last-child {
+  margin-bottom: 0;
 }
 .node.node-zitat .row div.col-sm-12 .field-name-body a {
   font-family: 'URWGroteskExtLig', sans-serif;
@@ -10131,6 +10141,9 @@ form#user-login {
   max-width: 100%;
   height: auto;
   min-height: 350px;
+}
+.node.node-zitat .row div.col-sm-12 .field-name-body p {
+  margin-bottom: 0;
 }
 .node.node-zitat .row div.col-sm-12 .field-name-field-autor .field-item {
   font-family: 'URWGroteskExtLigObl', sans-serif;
@@ -10283,10 +10296,10 @@ form#user-login {
 .node.node-webform .row .col-sm-6 .field-name-body p,
 .node.node-webform .row .col-sm-12 .field-name-body tbody td,
 .node.node-webform .row .col-sm-6 .field-name-body tbody td {
-  margin-bottom: 1.13em;
+  margin-bottom: 1.1em;
   font-family: 'URWGroteskExtLig', sans-serif;
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   -ms-word-break: break-all;
   word-break: break-word;
@@ -10311,6 +10324,12 @@ form#user-login {
   .node.node-webform .row .col-sm-6 .field-name-body tbody td {
     font-size: 17px;
   }
+}
+.node.node-webform .row .col-sm-12 .field-name-body p:last-child,
+.node.node-webform .row .col-sm-6 .field-name-body p:last-child,
+.node.node-webform .row .col-sm-12 .field-name-body tbody td:last-child,
+.node.node-webform .row .col-sm-6 .field-name-body tbody td:last-child {
+  margin-bottom: 0;
 }
 .node.node-webform .row .col-sm-12 .field-name-body a,
 .node.node-webform .row .col-sm-6 .field-name-body a {
@@ -11257,10 +11276,10 @@ body.navbar-is-fixed-top.admin-menu {
   }
 }
 body.navbar-is-fixed-top.front {
-  padding-top: 45px !important;
+  padding-top: 43px !important;
 }
 body.navbar-is-fixed-top.front.admin-menu {
-  padding-top: 45px !important;
+  padding-top: 43px !important;
 }
 header#navbar {
   margin: 0;
