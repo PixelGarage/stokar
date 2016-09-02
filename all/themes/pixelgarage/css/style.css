@@ -9228,6 +9228,9 @@ form#user-login {
     margin: 0 -45px;
   }
 }
+.node.node-page .row .col-sm-5 {
+  padding-bottom: 50px;
+}
 @media screen and (min-width: 48em) {
   .node.node-page .row .col-sm-5,
   .node.node-page .row .col-sm-7 {
@@ -9245,9 +9248,6 @@ form#user-login {
   .node.node-page .row .col-sm-7 {
     padding: 0 45px;
   }
-}
-.node.node-page .row .col-sm-5 {
-  padding-bottom: 50px;
 }
 @media screen and (min-width: 48em) {
   .node.node-page {
@@ -9531,6 +9531,9 @@ form#user-login {
     margin: 0 -45px;
   }
 }
+.node.node-article .row .col-sm-5 {
+  padding-bottom: 50px;
+}
 @media screen and (min-width: 48em) {
   .node.node-article .row .col-sm-5,
   .node.node-article .row .col-sm-7 {
@@ -9548,9 +9551,6 @@ form#user-login {
   .node.node-article .row .col-sm-7 {
     padding: 0 45px;
   }
-}
-.node.node-article .row .col-sm-5 {
-  padding-bottom: 50px;
 }
 .node.node-article .row div.col-sm-5 .field-name-field-image {
   width: 100%;
@@ -9763,6 +9763,9 @@ form#user-login {
     margin: 0 -45px;
   }
 }
+.node.node-buch .row .col-sm-5 {
+  padding-bottom: 50px;
+}
 @media screen and (min-width: 48em) {
   .node.node-buch .row .col-sm-5,
   .node.node-buch .row .col-sm-7 {
@@ -9780,9 +9783,6 @@ form#user-login {
   .node.node-buch .row .col-sm-7 {
     padding: 0 45px;
   }
-}
-.node.node-buch .row .col-sm-5 {
-  padding-bottom: 50px;
 }
 .node.node-buch .row div.col-sm-5 .field-name-field-image {
   width: 100%;
